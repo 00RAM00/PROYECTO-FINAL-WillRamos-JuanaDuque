@@ -1,0 +1,11 @@
+# DEPENDENCIAS
+node_modules
+
+# SECRETS
+.env
+.env.*
+
+# LOGS Y CACHÉ
+npm-debug.log*
+yarn-debug.log*
+*.log

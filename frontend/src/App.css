@@ -1,0 +1,147 @@
+/* Base y Tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.App {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff; /* Azul primario */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+/* --- Estilos del Formulario (TaskForm) --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"],
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que padding y border estén dentro del width */
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* --- Estilos de la Tarea (TaskItem) --- */
+.task-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para tarea completada */
+.task-item.completed {
+    background-color: #e9f5ff; /* Fondo más claro para completadas */
+    opacity: 0.7;
+}
+
+.task-item.completed h3,
+.task-item.completed p {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.task-item p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* Contenedor de botones */
+.task-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.task-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+/* Botón de estado */
+.task-buttons button:first-child {
+    background-color: #007bff; /* Azul para el toggle */
+    color: white;
+}
+
+.task-buttons button:first-child:hover {
+    background-color: #0056b3;
+}
+
+/* Botón de eliminar */
+.task-buttons button:last-child {
+    background-color: #dc3545; /* Rojo para eliminar */
+    color: white;
+}
+
+.task-buttons button:last-child:hover {
+    background-color: #c82333;
+}
