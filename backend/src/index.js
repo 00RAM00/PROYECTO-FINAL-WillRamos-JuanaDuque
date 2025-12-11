@@ -40,3 +40,7 @@ app.use('/api/todos', todoRoutes);
 
 const PORT = process.env.PORT || 5000;
 
+// Esta línea es la que Render debe detectar
+app.listen(PORT, () => {
+    console.log(`Servidor Express corriendo en el puerto ${PORT}`);
+});
