@@ -22,7 +22,8 @@ const app = express();
 // 2. CONFIGURACIÓN DE CORS
 // Definir los orígenes permitidos (necesario para la prueba local)
 const allowedOrigins = [
-    'http://localhost:5173', // Frontend de Vite/React
+    'http://localhost:5173',
+    'https://proyecto-final-will-ramos-juana-duq.vercel.app/' // Frontend de Vite/React
     // Aquí añadirás el dominio de Vercel cuando despliegues
 ];
 
