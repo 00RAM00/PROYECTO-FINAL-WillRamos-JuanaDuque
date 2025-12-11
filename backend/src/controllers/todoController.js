@@ -1,7 +1,7 @@
 // backend/src/controllers/todoController.js
 
 const Todo = require('../models/Todo');
-const mongoose = require('mongoose'); // Necesario para validar IDs
+const mongoose = require('mongoose');
 
 // GET /api/todos - Listar tareas
 exports.getTodos = async (req, res) => {
