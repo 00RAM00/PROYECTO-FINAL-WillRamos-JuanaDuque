@@ -33,7 +33,7 @@ jobs:
           
       # 3. Mover al directorio del Frontend
       - name: Change Directory to Frontend
-        run: cd frontend
+        run: ./frontend
         
       # 4. Instalación de dependencias del Frontend
       - [cite_start]name: Install Frontend Dependencies (npm install) [cite: 105]
